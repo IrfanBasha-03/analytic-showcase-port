@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Smith - DevOps & Data Analytics Portfolio</title>
+    <meta name="description" content="Fresh graduate passionate about DevOps, Data Analytics, and Cloud Computing. Showcasing skills and projects." />
+    <meta name="author" content="John Smith" />
+    
+    <meta property="og:title" content="John Smith - Portfolio" />
+    <meta property="og:description" content="Fresh graduate passionate about DevOps, Data Analytics, and Cloud Computing" />
+    <meta property="og:type" content="website" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- Animated background elements -->
+        <div class="background-effects">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="floating-orb orb-4"></div>
+            <div class="floating-orb orb-5"></div>
+            
+            <!-- Animated particles -->
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gradient">John Smith</span>
+                </h1>
+                
+                <div class="typing-container">
+                    <span id="typed-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                
+                <p class="hero-description">
+                    Fresh graduate passionate about technology, eager to learn and contribute to innovative projects. 
+                    Currently building skills in DevOps practices, data analysis, and cloud technologies through hands-on learning and personal projects.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download CV
+                    </button>
+                    <button class="btn btn-outline">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15,3 21,3 21,9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        View Projects
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="text-gradient">Technical Skills</span>
+                </h2>
+                <p class="section-description">
+                    Currently developing skills through coursework, online learning, and hands-on practice
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="python">
+                    <div class="skill-header">
+                        <h3 class="skill-name">Python Programming</h3>
+                        <span class="skill-badge programming">PROGRAMMING</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-percent">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="git">
+                    <div class="skill-header">
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <span class="skill-badge devops">DEVOPS</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-percent">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="docker">
+                    <div class="skill-header">
+                        <h3 class="skill-name">Docker Basics</h3>
+                        <span class="skill-badge devops">DEVOPS</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-percent">65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="65"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="aws">
+                    <div class="skill-header">
+                        <h3 class="skill-name">AWS Fundamentals</h3>
+                        <span class="skill-badge cloud">CLOUD</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-percent">60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="60"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="sql">
+                    <div class="skill-header">
+                        <h3 class="skill-name">SQL & MySQL</h3>
+                        <span class="skill-badge data">DATA</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-percent">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="linux">
+                    <div class="skill-header">
+                        <h3 class="skill-name">Linux Commands</h3>
+                        <span class="skill-badge devops">DEVOPS</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span class="progress-percent">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Resources -->
+            <div class="learning-section">
+                <h3 class="learning-title text-gradient">Learning Journey</h3>
+                <div class="learning-resources">
+                    <span class="resource-badge">Online Courses (Coursera, Udemy)</span>
+                    <span class="resource-badge">AWS Free Tier Practice</span>
+                    <span class="resource-badge">GitHub Personal Projects</span>
+                    <span class="resource-badge">Tech Community Forums</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="text-gradient">Featured Projects</span>
+                </h2>
+                <p class="section-description">
+                    Personal projects showcasing my learning journey and technical interests
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Student Management Dashboard</h3>
+                        <p class="project-description">
+                            A web-based dashboard for managing student records with basic CRUD operations. 
+                            Built to practice database interactions and user interface design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Basic Data Visualization Tool</h3>
+                        <p class="project-description">
+                            A simple Python script that reads CSV data and creates basic charts and graphs. 
+                            Helped me understand data manipulation and visualization concepts.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">Matplotlib</span>
+                            <span class="tech-badge">CSV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Learning Blog</h3>
+                        <p class="project-description">
+                            A simple blog website where I document my learning journey in tech. 
+                            Includes posts about coding challenges and new technologies I'm exploring.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">GitHub Pages</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="text-gradient">Education & Learning</span>
+                </h2>
+                <p class="section-description">
+                    My academic background and continuous learning journey in technology
+                </p>
+            </div>
+
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3 class="timeline-title">Bachelor of Computer Science</h3>
+                        <p class="timeline-institution">University of Technology</p>
+                        <p class="timeline-description">
+                            Graduated with honors. Focused on software development, data structures, 
+                            and database management. Completed capstone project on cloud-based data analytics.
+                        </p>
+                        <div class="timeline-achievements">
+                            <span class="achievement">GPA: 3.8/4.0</span>
+                            <span class="achievement">Dean's List</span>
+                            <span class="achievement">Programming Club Member</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3 class="timeline-title">AWS Cloud Practitioner</h3>
+                        <p class="timeline-institution">Amazon Web Services</p>
+                        <p class="timeline-description">
+                            Currently preparing for AWS Cloud Practitioner certification. 
+                            Learning cloud fundamentals, AWS services, and best practices.
+                        </p>
+                        <div class="timeline-achievements">
+                            <span class="achievement">In Progress</span>
+                            <span class="achievement">Hands-on Labs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3 class="timeline-title">Data Analytics Course</h3>
+                        <p class="timeline-institution">Coursera - Google</p>
+                        <p class="timeline-description">
+                            Completed comprehensive data analytics program covering data cleaning, 
+                            analysis, and visualization using Excel, SQL, and Python.
+                        </p>
+                        <div class="timeline-achievements">
+                            <span class="achievement">Certificate Earned</span>
+                            <span class="achievement">Capstone Project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="text-gradient">Let's Connect</span>
+                </h2>
+                <p class="section-description">
+                    Ready to start my career and contribute to innovative projects
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>john.smith@email.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/johnsmith</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>github.com/johnsmith</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Smith. Fresh graduate ready to make an impact in tech.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
