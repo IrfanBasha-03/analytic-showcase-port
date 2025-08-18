@@ -6,42 +6,42 @@ import { ExternalLink, Github, TrendingUp, Shield, Database, Cloud } from "lucid
 const projects = [
   {
     id: 1,
-    title: "Multi-Cloud Infrastructure Automation",
-    description: "Designed and implemented a Terraform-based multi-cloud infrastructure spanning AWS, Azure, and GCP with automated deployment pipelines.",
-    technologies: ["Terraform", "AWS", "Azure", "GCP", "Jenkins"],
-    metrics: ["99.9% uptime", "50% cost reduction", "80% faster deployments"],
+    title: "Personal Portfolio Website",
+    description: "Built a responsive portfolio website using React, TypeScript, and Tailwind CSS with modern animations and dark theme. Deployed on Vercel with continuous deployment.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vercel", "Git"],
+    metrics: ["Responsive Design", "SEO Optimized", "Fast Loading"],
     icon: Cloud,
-    status: "Production",
+    status: "Live",
     link: "#"
   },
   {
     id: 2,
-    title: "Real-time Data Analytics Platform",
-    description: "Built a scalable data pipeline processing 10M+ events daily with real-time dashboards and ML-powered insights for business intelligence.",
-    technologies: ["Apache Kafka", "Spark", "Python", "Elasticsearch", "Kibana"],
-    metrics: ["10M+ events/day", "Sub-second latency", "95% accuracy ML models"],
+    title: "Student Grade Analytics Dashboard",
+    description: "Created a Python-based data analysis project that processes student performance data and generates interactive visualizations to identify learning trends.",
+    technologies: ["Python", "Pandas", "Matplotlib", "Jupyter", "CSV"],
+    metrics: ["500+ records analyzed", "Interactive charts", "PDF reports"],
     icon: Database,
-    status: "Production",
+    status: "Complete",
     link: "#"
   },
   {
     id: 3,
-    title: "Zero-Trust Security Framework",
-    description: "Implemented comprehensive security monitoring with automated threat detection and response across containerized microservices architecture.",
-    technologies: ["Kubernetes", "Istio", "Falco", "Prometheus", "Grafana"],
-    metrics: ["100% compliance", "90% threat detection", "5min response time"],
+    title: "Dockerized Web Application",
+    description: "Containerized a simple web application using Docker, learned about multi-stage builds, and practiced container orchestration fundamentals.",
+    technologies: ["Docker", "Node.js", "HTML/CSS", "Docker Compose", "GitHub"],
+    metrics: ["Multi-container setup", "Optimized images", "Easy deployment"],
     icon: Shield,
-    status: "Production",
+    status: "Learning",
     link: "#"
   },
   {
     id: 4,
-    title: "Predictive Maintenance System",
-    description: "Developed ML models for predictive maintenance using IoT sensor data, preventing equipment failures and optimizing maintenance schedules.",
-    technologies: ["Python", "TensorFlow", "InfluxDB", "Docker", "Kubernetes"],
-    metrics: ["40% failure reduction", "$2M cost savings", "85% prediction accuracy"],
+    title: "Weather Data Collector",
+    description: "Built a Python script that collects weather data from APIs, stores it in a database, and creates basic visualizations for trend analysis.",
+    technologies: ["Python", "REST APIs", "SQLite", "Requests", "Matplotlib"],
+    metrics: ["Real-time data", "7-day history", "Automated collection"],
     icon: TrendingUp,
-    status: "Production",
+    status: "Complete",
     link: "#"
   }
 ];
@@ -52,10 +52,10 @@ export const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            <span className="text-gradient">Featured Projects</span>
+            <span className="text-gradient">Personal Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real-world solutions delivering measurable business impact through innovative technology implementations
+            Hands-on learning projects that demonstrate my growing skills and passion for technology
           </p>
         </div>
 

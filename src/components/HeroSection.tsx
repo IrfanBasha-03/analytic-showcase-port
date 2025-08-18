@@ -4,29 +4,60 @@ import { ChevronDown, Download, ExternalLink } from "lucide-react";
 
 export const HeroSection = () => {
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "DevOps Engineer & Data Analyst";
+  const [currentRole, setCurrentRole] = useState(0);
+  const roles = ["Aspiring DevOps Engineer", "Data Analytics Enthusiast", "Cloud Computing Student", "Tech Innovation Seeker"];
   
   useEffect(() => {
     let currentIndex = 0;
-    const interval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setDisplayedText(fullText.slice(0, currentIndex));
+    const currentText = roles[currentRole];
+    
+    const typeInterval = setInterval(() => {
+      if (currentIndex <= currentText.length) {
+        setDisplayedText(currentText.slice(0, currentIndex));
         currentIndex++;
       } else {
-        clearInterval(interval);
+        setTimeout(() => {
+          // Clear text with backspace effect
+          const clearingInterval = setInterval(() => {
+            if (currentIndex > 0) {
+              setDisplayedText(currentText.slice(0, currentIndex));
+              currentIndex--;
+            } else {
+              clearInterval(clearingInterval);
+              setCurrentRole((prev) => (prev + 1) % roles.length);
+            }
+          }, 50);
+        }, 2000);
+        clearInterval(typeInterval);
       }
     }, 100);
     
-    return () => clearInterval(interval);
-  }, []);
+    return () => clearInterval(typeInterval);
+  }, [currentRole]);
 
   return (
     <section className="min-h-screen hero-gradient relative flex items-center justify-center overflow-hidden">
-      {/* Animated background elements */}
+      {/* Enhanced animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-primary/10 rounded-full blur-xl floating"></div>
-        <div className="absolute bottom-40 right-20 w-40 h-40 bg-tech-accent/10 rounded-full blur-xl floating" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-data-viz/10 rounded-full blur-xl floating" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-20 left-20 w-32 h-32 bg-primary/10 rounded-full blur-xl floating animate-pulse-glow"></div>
+        <div className="absolute bottom-40 right-20 w-40 h-40 bg-tech-accent/10 rounded-full blur-xl floating animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-data-viz/10 rounded-full blur-xl floating animate-pulse-glow" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-40 right-1/3 w-16 h-16 bg-warning/10 rounded-full blur-xl floating animate-pulse-glow" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-20 left-1/3 w-20 h-20 bg-primary/10 rounded-full blur-xl floating animate-pulse-glow" style={{ animationDelay: '4s' }}></div>
+        
+        {/* Animated particles */}
+        {[...Array(6)].map((_, i) => (
+          <div 
+            key={i}
+            className="absolute w-2 h-2 bg-primary/30 rounded-full animate-bounce"
+            style={{ 
+              top: `${20 + (i * 15)}%`, 
+              left: `${10 + (i * 12)}%`,
+              animationDelay: `${i * 0.5}s`,
+              animationDuration: `${2 + (i * 0.3)}s`
+            }}
+          />
+        ))}
       </div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
@@ -42,25 +73,25 @@ export const HeroSection = () => {
             </span>
           </div>
           
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            Passionate about building scalable infrastructure and extracting insights from data. 
-            Specialized in cloud technologies, automation, and advanced analytics to drive business growth.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-in-right" style={{ animationDelay: '1s' }}>
+            Fresh graduate passionate about technology, eager to learn and contribute to innovative projects. 
+            Currently building skills in DevOps practices, data analysis, and cloud technologies through hands-on learning and personal projects.
           </p>
           
-          <div className="flex flex-wrap gap-4 justify-center mb-16">
+          <div className="flex flex-wrap gap-4 justify-center mb-16 animate-fade-in" style={{ animationDelay: '1.5s' }}>
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect transition-all duration-300 hover:scale-105"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect transition-all duration-500 hover:scale-110 hover:rotate-1 transform"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <Download className="mr-2 h-5 w-5 animate-bounce" />
+              Download CV
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-primary/30 text-primary hover:bg-primary/10 hover:border-primary tech-glow transition-all duration-300 hover:scale-105"
+              className="border-primary/30 text-primary hover:bg-primary/10 hover:border-primary tech-glow transition-all duration-500 hover:scale-110 hover:-rotate-1 transform"
             >
-              <ExternalLink className="mr-2 h-5 w-5" />
+              <ExternalLink className="mr-2 h-5 w-5 animate-pulse" />
               View Projects
             </Button>
           </div>
