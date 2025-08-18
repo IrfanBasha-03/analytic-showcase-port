@@ -9,16 +9,16 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'Docker & Kubernetes', level: 95, category: 'devops' },
-  { name: 'AWS/Azure/GCP', level: 90, category: 'cloud' },
-  { name: 'Python', level: 88, category: 'programming' },
-  { name: 'Terraform', level: 85, category: 'devops' },
-  { name: 'Data Analytics', level: 92, category: 'data' },
-  { name: 'CI/CD Pipelines', level: 93, category: 'devops' },
-  { name: 'SQL & NoSQL', level: 87, category: 'data' },
-  { name: 'Monitoring & Alerting', level: 89, category: 'devops' },
-  { name: 'Machine Learning', level: 80, category: 'data' },
-  { name: 'Infrastructure as Code', level: 91, category: 'cloud' },
+  { name: 'Python Programming', level: 75, category: 'programming' },
+  { name: 'Git & GitHub', level: 80, category: 'devops' },
+  { name: 'Docker Basics', level: 65, category: 'devops' },
+  { name: 'AWS Fundamentals', level: 60, category: 'cloud' },
+  { name: 'SQL & MySQL', level: 70, category: 'data' },
+  { name: 'Linux Commands', level: 75, category: 'devops' },
+  { name: 'Data Visualization', level: 68, category: 'data' },
+  { name: 'HTML/CSS/JavaScript', level: 73, category: 'programming' },
+  { name: 'Pandas & NumPy', level: 65, category: 'data' },
+  { name: 'Cloud Computing', level: 58, category: 'cloud' },
 ];
 
 const categoryColors = {
@@ -54,10 +54,10 @@ export const SkillsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            <span className="text-gradient">Technical Expertise</span>
+            <span className="text-gradient">Technical Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive skill set spanning DevOps practices, data science, and cloud technologies
+            Currently developing skills through coursework, online learning, and hands-on practice
           </p>
         </div>
 
@@ -91,13 +91,13 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Certifications */}
+        {/* Learning Resources */}
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-8 text-gradient">Certifications</h3>
+          <h3 className="text-2xl font-bold mb-8 text-gradient">Learning Journey</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {['AWS Solutions Architect', 'Kubernetes Administrator', 'Terraform Associate', 'Azure Data Engineer'].map((cert) => (
-              <Badge key={cert} variant="outline" className="px-4 py-2 text-sm border-primary/30 text-primary hover:bg-primary/10">
-                {cert}
+            {['Online Courses (Coursera, Udemy)', 'AWS Free Tier Practice', 'GitHub Personal Projects', 'Tech Community Forums'].map((resource) => (
+              <Badge key={resource} variant="outline" className="px-4 py-2 text-sm border-primary/30 text-primary hover:bg-primary/10">
+                {resource}
               </Badge>
             ))}
           </div>
