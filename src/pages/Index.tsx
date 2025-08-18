@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
-import { EducationSection } from "@/components/EducationSection";
+import { ExperienceSection } from "@/components/ExperienceSection";
 import { ContactSection } from "@/components/ContactSection";
 
 const Index = () => {
@@ -10,14 +10,14 @@ const Index = () => {
       <HeroSection />
       <SkillsSection />
       <ProjectsSection />
-      <EducationSection />
+      <ExperienceSection />
       <ContactSection />
       
       {/* Footer */}
       <footer className="bg-background/80 border-t border-border/50 py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © 2024 John Smith. Fresh graduate ready to make an impact in tech.
+            © 2024 John Smith. Built with modern technologies and deployed with love.
           </p>
         </div>
       </footer>
