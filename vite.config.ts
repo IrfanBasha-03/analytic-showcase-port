@@ -8,7 +8,6 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    base:"analytic-showcase-port"
   },
   plugins: [
     react(),
