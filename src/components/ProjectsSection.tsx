@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, TrendingUp, Shield, Database, Cloud } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -47,6 +48,12 @@ const projects = [
 ];
 
 export const ProjectsSection = () => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = (projectId: number) => {
+    navigate(`/project/${projectId}`);
+  };
+
   return (
     <section className="py-20 bg-card/20">
       <div className="container mx-auto px-4">
@@ -106,7 +113,11 @@ export const ProjectsSection = () => {
 
                 {/* Actions */}
                 <div className="flex gap-3">
-                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90">
+                  <Button 
+                    size="sm" 
+                    className="flex-1 bg-primary hover:bg-primary/90"
+                    onClick={() => handleViewDetails(project.id)}
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     View Details
                   </Button>
