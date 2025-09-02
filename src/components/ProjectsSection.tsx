@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, TrendingUp, Shield, Database, Cloud } from "lucide-react";
+import { ExternalLink, Github, TrendingUp, Shield, Database, Cloud, Container, Settings } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const projects = [
@@ -37,12 +37,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "Weather Data Collector",
-    description: "Built a Python script that collects weather data from APIs, stores it in a database, and creates basic visualizations for trend analysis.",
-    technologies: ["Python", "REST APIs", "SQLite", "Requests", "Matplotlib"],
-    metrics: ["Real-time data", "7-day history", "Automated collection"],
-    icon: TrendingUp,
-    status: "Complete",
+    title: "Multi-tier Retail Store Application",
+    description: "A Multi-tier Retail Store Application to demonstrate Kubernetes To Production with EKS + Terraform & GitOps With ArgoCD & GitHub Actions",
+    technologies: ["Kubernetes", "EKS", "Terraform", "ArgoCD", "GitHub Actions", "Docker"],
+    metrics: ["Production Ready", "GitOps", "Auto Scaling"],
+    icon: Container,
+    status: "About",
     link: "#"
   }
 ];
