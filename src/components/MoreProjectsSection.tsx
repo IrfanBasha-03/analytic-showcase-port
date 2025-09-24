@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Code, Smartphone, Globe, Bot, Coffee, Book } from "lucide-react";
+import { ExternalLink, Github, Code, Smartphone, Globe, Bot, Coffee, Book, Eye } from "lucide-react";
 
 const moreProjects = [
   {
@@ -12,7 +12,8 @@ const moreProjects = [
     metrics: ["15+ screens", "Interactive prototype", "User tested"],
     icon: Smartphone,
     status: "Design",
-    link: "#"
+    demoLink: "https://www.figma.com/proto/demo-ecommerce",
+    githubLink: "https://github.com/username/ecommerce-app-ui"
   },
   {
     id: 6,
@@ -22,7 +23,8 @@ const moreProjects = [
     metrics: ["5 endpoints", "Caching layer", "Error handling"],
     icon: Globe,
     status: "Complete",
-    link: "#"
+    demoLink: "https://weather-api-demo.herokuapp.com",
+    githubLink: "https://github.com/username/weather-forecast-api"
   },
   {
     id: 7,
@@ -32,7 +34,8 @@ const moreProjects = [
     metrics: ["NLP integration", "Context awareness", "Learning bot"],
     icon: Bot,
     status: "Learning",
-    link: "#"
+    demoLink: "https://ai-chatbot-demo.vercel.app",
+    githubLink: "https://github.com/username/ai-chatbot-assistant"
   },
   {
     id: 8,
@@ -42,7 +45,8 @@ const moreProjects = [
     metrics: ["Full CRUD", "Authentication", "Responsive UI"],
     icon: Coffee,
     status: "Active",
-    link: "#"
+    demoLink: "https://coffee-shop-mgmt.netlify.app",
+    githubLink: "https://github.com/username/coffee-shop-management"
   },
   {
     id: 9,
@@ -52,7 +56,8 @@ const moreProjects = [
     metrics: ["Multi-role system", "Progress tracking", "Quiz engine"],
     icon: Book,
     status: "Development",
-    link: "#"
+    demoLink: "https://lms-demo.herokuapp.com",
+    githubLink: "https://github.com/username/learning-management-system"
   },
   {
     id: 10,
@@ -62,7 +67,8 @@ const moreProjects = [
     metrics: ["Syntax highlighting", "Search function", "Categories"],
     icon: Code,
     status: "Personal",
-    link: "#"
+    demoLink: "https://code-snippets-manager.vercel.app",
+    githubLink: "https://github.com/username/code-snippet-manager"
   }
 ];
 
@@ -131,11 +137,20 @@ export const MoreProjectsSection = () => {
 
                 {/* Actions */}
                 <div className="flex gap-2">
-                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90 text-xs">
-                    <ExternalLink className="mr-1 h-3 w-3" />
-                    View
+                  <Button 
+                    size="sm" 
+                    className="flex-1 bg-primary hover:bg-primary/90 text-xs"
+                    onClick={() => window.open(project.demoLink, '_blank')}
+                  >
+                    <Eye className="mr-1 h-3 w-3" />
+                    View Live
                   </Button>
-                  <Button size="sm" variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="border-primary/30 text-primary hover:bg-primary/10"
+                    onClick={() => window.open(project.githubLink, '_blank')}
+                  >
                     <Github className="h-3 w-3" />
                   </Button>
                 </div>
