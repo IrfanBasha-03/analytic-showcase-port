@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Code, Smartphone, Globe, Bot, Coffee, Book, Eye } from "lucide-react";
+import { Github, Code, Smartphone, Globe, Bot, Coffee, Book, Eye } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const moreProjects = [
   {
@@ -73,6 +74,7 @@ const moreProjects = [
 ];
 
 export const MoreProjectsSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -140,10 +142,10 @@ export const MoreProjectsSection = () => {
                   <Button 
                     size="sm" 
                     className="flex-1 bg-primary hover:bg-primary/90 text-xs"
-                    onClick={() => window.open(project.demoLink, '_blank')}
+                    onClick={() => navigate(`/more-project/${project.id}`)}
                   >
                     <Eye className="mr-1 h-3 w-3" />
-                    View Live
+                    View
                   </Button>
                   <Button 
                     size="sm" 
