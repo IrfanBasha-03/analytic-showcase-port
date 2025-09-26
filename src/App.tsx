@@ -13,15 +13,7 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
-  const base = (() => {
-    if (typeof window !== 'undefined') {
-      const segments = window.location.pathname.split('/').filter(Boolean);
-      if (segments.length > 0 && segments[0] === 'analytic-showcase-port') {
-        return '/analytic-showcase-port';
-      }
-    }
-    return '/';
-  })();
+  const base = import.meta.env.PROD ? '/analytic-showcase-port' : '/';
 
   return (
     <QueryClientProvider client={queryClient}>
