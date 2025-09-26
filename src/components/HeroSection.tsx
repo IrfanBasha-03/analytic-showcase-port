@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Download, ExternalLink } from "lucide-react";
+import { CloudDevOps3D } from "./CloudDevOps3D";
 
 export const HeroSection = () => {
   const [displayedText, setDisplayedText] = useState("");
@@ -37,6 +38,11 @@ export const HeroSection = () => {
 
   return (
     <section className="min-h-screen hero-gradient relative flex items-center justify-center overflow-hidden">
+      {/* 3D Cloud DevOps Animation */}
+      <div className="absolute inset-0 opacity-30">
+        <CloudDevOps3D />
+      </div>
+      
       {/* Enhanced animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-32 h-32 bg-primary/10 rounded-full blur-xl floating animate-pulse-glow"></div>
